@@ -17,6 +17,7 @@ body {
 nav {
   border-radius: 0px 0px 10px 10px;
   height: 8rem;
+  z-index: 1;
 }
 nav #navbarlist {
   display: flex;
@@ -200,10 +201,19 @@ nav .container-fluid {
   width: 5rem;
   border-radius: 50%;
   margin: 1rem;
-}.blackLine{
+}
+.blackLine {
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #fff 0%, #fff 10%, #2C3539 10%, #2C3539 90%, #fff 90%, #fff 100%);
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 10%,
+    #2c3539 10%,
+    #2c3539 90%,
+    #fff 90%,
+    #fff 100%
+  );
   text-align: center;
 }
 .downloadPart .downloadDescription {
@@ -214,6 +224,43 @@ nav .container-fluid {
   margin: 3rem;
 }
 
+/* ***********************About US PAGES**************************** */
+.aboutContainer .aboutImage img {
+  width: 100%;
+}
+.aboutContainer .startingContent {
+  margin-left: 5rem;
+}
+.aboutContainer h3 {
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+.aboutContainer h1 {
+  font-size: 5rem;
+}
+.aboutContainer .divideSections .dsImage img {
+  height: 100%;
+  width: 100%;
+}
+#carouselExampleIndicators img {
+  height: 75vh;
+}
+.aboutContainer .aboutCard {
+  width: 25%;
+  margin: 10rem 0;
+}
+.aboutContainer .aboutCard h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.aboutContainer .aboutCard p {
+  font-size: 2rem;
+}
+/* *****************CONTACTUS PAGE******************** */
+.contactContainer .contactHeader{
+  height: 80%;
+}
 /* ****************************Footer********************* */
 /* footer{
   height:33rem;
@@ -319,7 +366,8 @@ footer .lowerFooter h4 {
   .car {
     left: 20rem;
     bottom: 3rem;
-    height: 40rem;
+    height: 35rem;
+    width: 40rem;
   }
   .getStarted {
     margin-top: 25rem;
@@ -352,14 +400,20 @@ footer .lowerFooter h4 {
     padding: 3rem 0;
     margin: 3rem 0;
   }
-  .aboutUs .reviewrow{
+  .aboutUs .reviewrow {
     width: 60%;
   }
-  .aboutUs .reviewBox{
+  .aboutUs .reviewBox {
     margin: 5rem 3rem;
   }
-  .reviewContainer{
+  .reviewContainer {
     flex-direction: column;
+  }
+  #carouselExampleIndicators img {
+    height: 50vh;
+  }
+  .aboutContainer .startingContent {
+    margin-left: 3rem;
   }
 }
 @media (max-width: 500px) {
@@ -367,9 +421,9 @@ footer .lowerFooter h4 {
     font-size: 45%;
   }
   .car {
-    left: 96px;
+    left: 116px;
     bottom: 10rem;
-    height: 45rem;
+    height: 40rem;
   }
   .homeImage {
     padding-top: 0;
@@ -382,13 +436,23 @@ footer .lowerFooter h4 {
   }
   .aboutUs .reviewrow {
     width: 70%;
-}
+  }
   footer .fbox {
     width: 80%;
+  }
+  .aboutContainer .startingContent {
+    margin-left: 1rem;
   }
 }
 @media (max-width: 400px) {
   .getStarted {
-    margin-top: 20rem;
+    /* margin-top: 20rem; */
+    margin-top: 10rem;
+  }
+  .car {
+    left: 96px;
+    bottom: 10rem;
+    height: 35rem;
+    width: 40rem;
   }
 }
