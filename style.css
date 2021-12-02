@@ -225,29 +225,111 @@ nav .container-fluid {
 }
 
 /* ***********************About US PAGES**************************** */
+/* .aboutContainer .container {
+  width: 90%;
+} */
 .aboutContainer .aboutImage img {
   width: 100%;
 }
-.aboutContainer .startingContent {
+.aboutContainer .aboutImage {
+  height: 60vh;
+  background: url(./image/aboutUs1.png);
+  background-size: cover;
+  display: flex;
+  /* justify-content: center; */
+  align-items: end;
+}
+.aboutContainer .aboutImage h1,
+.aboutContainer .aboutCeoContent h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 8rem;
   margin-left: 5rem;
 }
-.aboutContainer h3 {
+.aboutContainer .startingContent {
+  margin: 4rem 5rem;
+  width: 90%;
+}
+.aboutContainer .startingContent h3 {
   font-size: 2.4rem;
   line-height: 4rem;
+  font-weight: 400;
+  color: #3c3c3c;
 }
-.aboutContainer h1 {
-  font-size: 5rem;
+.aboutContainer .startingContent h1 {
+  font-size: 7rem;
+  color: #3c3c3c;
+  font-weight: 500;
 }
-.aboutContainer .aboutInfoSection{
-  flex-direction: row;
+.aboutContainer .startingContent h2 {
+  font-size: 4rem;
+  color: #555555;
+  font-weight: 500;
+  margin: 3rem auto;
+}
+.aboutContainer .aboutCeoContent {
+  background: url(./image/aboutUs2.png);
+  height: 70vh;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.85;
+}
+.aboutContainer .aboutCeoContent h3 {
+  color: #fff;
+  width: 90%;
+  margin-left: 5rem;
+}
+.aboutContainer .aboutCeoContent h2 {
+  color: #fff;
+  width: 40%;
+  height: 4rem;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutContainer .aboutCeoContent .ceoButton {
+  height: 4rem;
+
+  width: 40%;
+}
+.aboutContainer .divideSections {
+  color: #fff;
+}
+.aboutFirstRow .dsImage,
+.aboutSecondRow .dsImage {
+  height: 75vh;
+}
+.aboutContainer .divideSections .dsContent h1 {
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+.aboutContainer .divideSections .aboutSecondRow .dsContent  {
+  border-radius: 0px 50px 50px 0px;
+}
+.aboutContainer .divideSections .aboutFirstRow .dsContent  {
+  border-radius: 50px 0px 0px 50px;
+}
+.aboutContainer .divideSections .dsContent{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.aboutContainer .divideSections .dsContent h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
 }
 .aboutContainer .divideSections .dsImage img {
   height: 100%;
   width: 100%;
 }
-#carouselExampleIndicators img {
-  height: 75vh;
+.aboutContainer .aboutInfoSection {
+  flex-direction: row;
 }
+
 .aboutContainer .aboutCard {
   width: 25%;
   /* margin: 10rem 0; */
@@ -270,7 +352,7 @@ nav .container-fluid {
   height: 80%;
   margin: 3rem auto;
 }
-.contactContainer .contactHeader h3{
+.contactContainer .contactHeader h3 {
   margin: 2rem 0;
 }
 .contactContainer .getinTouch {
@@ -422,6 +504,31 @@ footer .lowerFooter h4 {
   }
 }
 @media (max-width: 983px) {
+  .navbar-collapse.collapsing .navbar-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -45%;
+    transition: all 0.2s ease;
+  }
+
+  .navbar-collapse.show .navbar-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    height: auto;
+    width: 45%;
+    transition: left 0.35s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  nav #navbarlist {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 8rem;
+  }
   html {
     font-size: 55%;
   }
@@ -525,7 +632,8 @@ footer .lowerFooter h4 {
   }
   .aboutContainer .startingContent {
     margin-left: 3rem;
-  }.contactContainer .contactForm {
+  }
+  .contactContainer .contactForm {
     width: 90%;
   }
 }
@@ -555,7 +663,8 @@ footer .lowerFooter h4 {
   }
   .aboutContainer .startingContent {
     margin-left: 1rem;
-  }.contactContainer .contactForm {
+  }
+  .contactContainer .contactForm {
     width: 95%;
   }
 }
@@ -570,10 +679,11 @@ footer .lowerFooter h4 {
     height: 35rem;
     width: 40rem;
   }
-  .aboutContainer .aboutInfoSection{
+  .aboutContainer .aboutInfoSection {
     flex-direction: column;
   }
-  .aboutContainer .aboutInfoSection .aboutCard{
-width:75%;
-margin: 2rem auto;  }
+  .aboutContainer .aboutInfoSection .aboutCard {
+    width: 75%;
+    margin: 2rem auto;
+  }
 }
