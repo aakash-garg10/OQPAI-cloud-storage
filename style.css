@@ -275,6 +275,7 @@ nav .container-fluid {
   display: flex;
   justify-content: space-evenly;
   opacity: 0.85;
+  margin: 5rem 0;
 }
 .aboutContainer .aboutCeoContent h3 {
   color: #fff;
@@ -283,7 +284,7 @@ nav .container-fluid {
 }
 .aboutContainer .aboutCeoContent h2 {
   color: #fff;
-  width: 40%;
+  width: 50%;
   height: 4rem;
   margin-left: 5rem;
   display: flex;
@@ -292,11 +293,14 @@ nav .container-fluid {
 }
 .aboutContainer .aboutCeoContent .ceoButton {
   height: 4rem;
-
   width: 40%;
 }
 .aboutContainer .divideSections {
   color: #fff;
+}
+.aboutContainer .aboutFirstRow,
+.aboutContainer .aboutSecondRow {
+  margin: 8rem auto;
 }
 .aboutFirstRow .dsImage,
 .aboutSecondRow .dsImage {
@@ -306,13 +310,13 @@ nav .container-fluid {
   font-size: 5.5rem;
   font-weight: 600;
 }
-.aboutContainer .divideSections .aboutSecondRow .dsContent  {
-  border-radius: 0px 50px 50px 0px;
+.aboutContainer .divideSections .aboutSecondRow .dsContent {
+  border-radius: 0px 100px 100px 0px;
 }
-.aboutContainer .divideSections .aboutFirstRow .dsContent  {
-  border-radius: 50px 0px 0px 50px;
+.aboutContainer .divideSections .aboutFirstRow .dsContent {
+  border-radius: 100px 0px 0px 100px;
 }
-.aboutContainer .divideSections .dsContent{
+.aboutContainer .divideSections .dsContent {
   display: flex;
   justify-content: space-around;
   /* align-items: center; */
@@ -343,6 +347,142 @@ nav .container-fluid {
 .aboutContainer .aboutCard p {
   font-size: 2rem;
 }
+.aboutContainer .bikeSection .bikeSectionImage {
+  width: 45%;
+}
+.aboutContainer .bikeSection .bikeSectionContent {
+  width: 55%;
+}
+.aboutContainer .bikeSection .bikeSectionContent h1 {
+  font-weight: 500;
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+.aboutContainer .bikeSection .bikeSectionContent h3 {
+  font-weight: 400;
+  margin: 3rem 0;
+  font-size: 3rem;
+}
+
+.aboutContainer .learnMoreBtn a {
+  font-size: 2rem;
+  border-bottom: 2px solid #0d6efd;
+  font-weight: 400;
+  text-decoration: none;
+}
+.aboutContainer .globeSection {
+  width: 80%;
+  margin: 8rem auto;
+}
+.aboutContainer .globeSection .globeSectionImage {
+  width: 60%;
+}
+.aboutContainer .globeSection .globeSectionContent {
+  width: 40%;
+}
+.aboutContainer .globeSection .globeSectionContent h2 {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+}
+.aboutContainer .bikeSection,
+.newsContainer .newsHeader {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+/* ****************************NEWS PAGE **************************** */
+.newsContainer .newsImage img {
+  width: 100%;
+}
+.newsContainer .newsImage {
+  height: 65vh;
+  background: url(./image/NewsImage.png);
+  background-size: cover;
+  display: flex;
+}
+.newsContainer .newsImage .newsImageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  margin: 4rem auto;
+}
+.newsContainer .newsImage h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 8rem;
+}
+.newsContainer .newsImage h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.newsContainer .newsHeader {
+  height: 50vh;
+  width: 90%;
+}
+.newsContainer .newsHeader h2 {
+  color: #3c3c3c;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.newsContainer .newsHeader h1 {
+  color: #3c3c3c;
+  font-weight: 600;
+  font-size: 7rem;
+  margin: 5rem auto;
+}
+.newsContainer .newsCorporate,
+.newsContainer .latestNews {
+  width: 90%;
+  margin: 5rem auto;
+}
+.newsContainer .newsCorporate h1,
+.newsContainer .latestNews h1 {
+  color: #3c3c3c;
+  font-size: 6rem;
+  font-weight: 600;
+}
+.newsContainer .newsCorporate ul,
+.newsContainer .latestNews ul {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.newsContainer .newsCorporate li,
+.newsContainer .latestNews li {
+  margin-right: 3rem;
+}
+.newsContainer .newsCorporate li:first-child,
+.newsContainer .latestNews li:first-child {
+  border-bottom: 2px solid black;
+}
+.newsContainer .newsFirstRow .dsContent {
+  border-radius: 100px 0px 0px 100px;
+  padding: 8rem;
+}
+.newsContainer .newsFirstRow .dsContent h1 {
+  font-weight: 400;
+  font-size: 5rem;
+  color: #fff;
+}
+.newsContainer .newsFirstRow .dsContent h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.newsContainer .latestNews hr {
+  margin: 0;
+}
+
 /* *****************CONTACTUS PAGE******************** */
 .contactContainer {
   width: 80%;
@@ -503,6 +643,7 @@ footer .lowerFooter h4 {
     font-size: 1.5rem;
   }
 }
+
 @media (max-width: 983px) {
   .navbar-collapse.collapsing .navbar-nav {
     display: block;
@@ -573,7 +714,18 @@ footer .lowerFooter h4 {
     margin: 1rem;
     padding: 1rem;
   }
+  .aboutContainer .divideSections .aboutSecondRow .dsContent {
+    order: 2;
+  }
+  .aboutFirstRow .dsImage,
+  .aboutSecondRow .dsImage {
+    height: 65vh;
+  }
+  .aboutContainer .aboutCeoContent h2 {
+    width: 100%;
+  }
 }
+
 @media (max-width: 788px) {
   .car {
     left: 20rem;
@@ -595,6 +747,17 @@ footer .lowerFooter h4 {
     padding: 1rem;
     height: 15rem;
     width: 40%;
+  }
+  .aboutContainer .bikeSection .bikeSectionContent h1 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+  }
+  .aboutContainer .bikeSection .bikeSectionContent h3 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+  .newsContainer .newsCorporate ul {
+    flex-wrap: wrap;
   }
 }
 
@@ -627,14 +790,40 @@ footer .lowerFooter h4 {
   .reviewContainer {
     flex-direction: column;
   }
-  #carouselExampleIndicators img {
-    height: 50vh;
-  }
+
   .aboutContainer .startingContent {
     margin-left: 3rem;
   }
   .contactContainer .contactForm {
     width: 90%;
+  }
+  .aboutContainer .aboutInfoSection {
+    flex-direction: column;
+  }
+  .aboutContainer .aboutCard {
+    width: 65%;
+    margin: 5rem auto;
+  }
+
+  .aboutContainer .bikeSection {
+    flex-direction: column;
+    width: 100%;
+  }
+  .aboutContainer .bikeSection .bikeSectionImage {
+    width: 80%;
+    order: 1;
+  }
+  .aboutContainer .bikeSection .bikeSectionContent {
+    width: 80%;
+    order: 2;
+  }
+  .aboutContainer .globeSection {
+    flex-direction: column;
+  }
+  .aboutContainer .globeSection .globeSectionImage,
+  .aboutContainer .globeSection .globeSectionContent {
+    width: 90%;
+    margin: 3rem auto;
   }
 }
 @media (max-width: 500px) {
@@ -666,6 +855,10 @@ footer .lowerFooter h4 {
   }
   .contactContainer .contactForm {
     width: 95%;
+  }
+  .aboutFirstRow .dsImage,
+  .aboutSecondRow .dsImage {
+    height: 40vh;
   }
 }
 @media (max-width: 400px) {
