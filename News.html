@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- *******************NAVABR************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">OQPAI</a>
         <button
@@ -46,6 +46,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarlist">
+            <!-- <li class="d-inline d-lg-none">
+              <button
+              class="navbar-toggler close float-right"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            ><span class="cross">&times;</span>
+          </button>
+              <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
+          </li> -->
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/index.html"
                 >Home</a
@@ -56,6 +69,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/News.html">News and Events</a>
+            </li> <li class="nav-item">
+              <a class="nav-link" href="/ContactUs.html">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -120,12 +135,75 @@
           <li>News</li>
           <li style="color: #777777">Events and Presentations</li>
         </ul>
-        <hr>
+        <hr style="margin-bottom: 5rem" />
+        <div class="newsItem">
+          <div class="date">NOV 27 , 2021</div>
+          <div class="newsContent">
+            OQPAI Introduce OQPAI One: A New Membership Program Bringing
+            Togather the Best of OQPAI
+          </div>
+          <div class="readMoreBtn">
+            <a href="#">Read more &gt; </a>
+          </div>
+        </div>
+        <hr class="newsDivider" style="margin: 5rem 0" />
+        <div class="newsItem">
+          <div class="date">NOV 26 , 2021</div>
+          <div class="newsContent">
+            OQPAI Freight Completes Acquisition of transplace
+          </div>
+          <div class="readMoreBtn">
+            <a href="#">Read more &gt; </a>
+          </div>
+        </div>
+        <hr class="newsDivider" style="margin: 5rem 0" />
+        <div class="newsItem">
+          <div class="date">NOV 26 , 2021</div>
+          <div class="newsContent">
+            OQPAI to Host Investor Day in February 2022
+          </div>
+          <div class="readMoreBtn">
+            <a href="#">Read more &gt; </a>
+          </div>
+        </div>
+        <hr class="newsDivider" style="margin: 5rem 0" />
+        <div class="newsItem">
+          <div class="date">NOV 26 , 2021</div>
+          <div class="newsContent">
+            OQPAI Announces results for third Quarter 2021
+          </div>
+          <div class="readMoreBtn">
+            <a href="#">Read more &gt; </a>
+          </div>
+        </div>
+        <hr class="newsDivider" style="margin: 5rem 0" />
+        <div class="viewAllBtn">
+          <button type="button" class="btn btn-primary btn-lg">
+            View All &#8594;
+          </button>
+        </div>
+      </div>
+      <!-- *****************************LINK AND BUTTONS**************************** -->
+      <div class="newslinkBtns">
+        <div class="financialBtnWrapper">
+          <div class="moneyIcon"><i class="fas fa-money-bill"></i></div>
+          <div class="financialBtnContent">
+            <div class="btnContent">Financial</div>
+            <div class="forwardArrow">&#8594;</div>
+          </div>
+        </div>
+        <div class="newsEventsBtnWrapper">
+          <div class="calendarIcon"><i class="fas fa-calendar-week"></i></div>
+          <div class="newsEventsBtnContent">
+            <div class="btnContent">News and Events</div>
+            <div class="forwardArrow">&#8594;</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ************************FOOTER************************ -->
-    <footer class="bg-dark">
+    <footer class="bg-primary">
       <div class="footerContainer">
         <div class="fbox1 fbox">
           <h2>OQPAI</h2>
