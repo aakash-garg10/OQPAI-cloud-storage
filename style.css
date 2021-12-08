@@ -627,7 +627,9 @@ nav .container-fluid {
   flex-direction: column;
   justify-content: center;
 }
-.contactContainer .blueWhiteContainers .whiteArrow1 h2,.contactContainer .blueWhiteContainers .whiteArrow2 h2 {
+.contactContainer .blueWhiteContainers .whiteArrow1 h2,
+.contactContainer .blueWhiteContainers .whiteArrow2 h2,
+.contactContainer .blueWhiteContainers .whiteArrow3 h2 {
   font-size: 5rem;
   color: #3c3c3c;
   margin-top: 8rem;
@@ -648,11 +650,16 @@ nav .container-fluid {
   padding: 6rem;
   color: #3c3c3c;
 }
-.contactContainer .blueWhiteContainers .blueContainers .blueContentWrapper .blueContent{
+.contactContainer
+  .blueWhiteContainers
+  .blueContainers
+  .blueContentWrapper
+  .blueContent {
   color: white;
   padding: 6rem;
 }
-.contactContainer .blueWhiteContainers .blueContainers.blueArrow2{
+.contactContainer .blueWhiteContainers .blueContainers.blueArrow2,
+.contactContainer .blueWhiteContainers .blueContainers.blueArrow3 {
   padding: 5rem;
 }
 .contactContainer
@@ -663,13 +670,13 @@ nav .container-fluid {
   a {
   color: #3c3c3c;
 }
-.contactContainer .blueWhiteContainers .blueArrow2 h2{
+.contactContainer .blueWhiteContainers .blueArrow2 h2 {
   font-size: 5rem;
   font-weight: 600;
 }
 .contactContainer .blueWhiteContainers .whiteArrow2 {
   background: url(/image/blackWhiteArrowBG2.png);
-  background-size: 75% 20%;
+  background-size: 75% 10%;
   background-repeat: no-repeat;
   padding: 5rem;
   height: 90vh;
@@ -677,7 +684,91 @@ nav .container-fluid {
   justify-content: center;
   background-position-y: bottom;
 }
+.contactContainer .blueWhiteContainers .blueArrow3 {
+  background: url(/image/blueWhiteArrowBG2.png);
+  /* background-size: 75% 20%; */
+  background-size: 97% 100%;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactContainer .blueWhiteContainers .whiteArrow3 {
+  background: url(/image/blackWhiteArrowBG3.png);
+  background-size: 75% 12%;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  height: 65vh;
+  flex-direction: column;
+  justify-content: center;
+}
+/* *****************************LEFT RIGHT BOXES**************************** */
+.contactContainer .leftRightBoxes {
+  /* width: 90%;
+  margin: auto; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contactContainer .leftRightBoxes .leftBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 65%;
+}
+.contactContainer .leftRightBoxes .rightBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 65%;
+  align-self: end;
+}
+.contactContainer .leftRightBoxes .BoxContent .BoxInnerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactContainer .leftRightBoxes .BoxImage {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.contactContainer .leftRightBoxes .BoxContent {
+  width: 60%;
+}
+.contactContainer .leftRightBoxes .BoxContent h2,.contactContainer .reimagineContainer h2 {
+  font-size: 4rem;
+  color: #3c3c3c;
+  /* margin-top: 8rem; */
+  font-weight: 600;
+}
+.contactContainer .leftRightBoxes .BoxContent h3 {
+  font-size: 2.5rem;
+  color: #555555;
+  /* margin-top: 8rem; */
+  font-weight: 400;
+}
+.contactContainer .reimagineContainer{
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
 
+}
+.contactContainer .reimagineContainer hr.newsDivider {
+  background-color:black;
+  opacity: 1;
+  height:2px;
+}.contactContainer .reimagineContainer .newsItem{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactContainer .reimagineContainer .newsItem .reimagineBox{
+  width: 30%;
+}
 /* ****************************Footer********************* */
 /* footer{
   height:33rem;
