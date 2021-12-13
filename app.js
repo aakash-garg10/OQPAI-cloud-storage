@@ -40,36 +40,21 @@ let newsEvents = 0;
 });
 // console.log(newsCorporateListItems);
 
-console.log(newsCorporateListContent)
+// ***********************NAVIGATION INSIDE COMPLETE LIST*****************************
+console.log(newsCorporateListContent);
 function Clicked(elem) {
   newsCorporateListContent.forEach(function (element) {
-    // element.classList.add("d-none");
-    element.style.display = "none";
+    element.classList.add("newsCorporateHideDiv");
   });
-
+  newsCorporateListItems.forEach(function (element) {
+    element.style.borderBottom = "none";
+  });
+  elem.style.borderBottom = "2px solid black";
   const idname = elem.getAttribute("name");
   console.log(document.getElementById(idname));
-//   const contDiv=document.getElementById(idname).classList.add("newsCorporateShowDiv");
+  // displayBox=document.getElementById(idname)
+  // displayBox.classList.add("newsCorporateShowDiv");
+  //   const contDiv=document.getElementById(idname).classList.add("newsCorporateShowDiv");
+  document.getElementById(idname).classList.remove("newsCorporateHideDiv");
   document.getElementById(idname).classList.add("newsCorporateShowDiv");
 }
-// newsCorporateListItems.forEach(function (element) {
-//   element.addEventListener("click", () => {
-//     const idx = newsCorporateListItems.indexOf(this);
-//     console.log(idx);
-//     console.log("printing");
-//     element.classList.add("newsCorporateShowDiv");
-//   });
-// });
-
-// listItemEventsPresentation.addEventListener("click",()=>{
-//     if ( newsEvents == 1) {
-//         divisonItemEventsPresentation.style.display = "block";
-//         divisionItemNews.style.display = "none";
-//         newsEvents = 0;
-//         console.log(listItemEventsPresentation);
-//       } else {
-//         divisonItemEventsPresentation.style.display = "block";
-//         divisionItemNews.style.display = "none";
-//         newsEvents = 1;
-//       }
-// })
