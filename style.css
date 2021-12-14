@@ -511,7 +511,8 @@ nav .container-fluid {
   line-height: 1.5;
   color: #fff;
 }
-.newsContainer .latestNews hr {
+.newsContainer .latestNews hr,
+.financialsContainer .financialsMainContent hr,.newsEventsContainer .newsEventsMainContent hr {
   margin: 0;
 }
 .newsContainer .latestNews .newsItem {
@@ -581,6 +582,7 @@ nav .container-fluid {
   justify-content: space-between;
   align-items: center;
 }
+
 /* *****************CONTACTUS PAGE******************** */
 .contactContainer .contactImage {
   width: 100%;
@@ -630,9 +632,11 @@ nav .container-fluid {
 }
 .contactContainer .blueWhiteContainers .blueArrow1 {
   background: url(/image/blueWhiteArrowBG1.png);
-  background-size: 100% 100%;
+  background-size: 60% 20%;
   padding: 5rem;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 .contactContainer .blueWhiteContainers .blueArrow1 h1,
 .contactContainer .blueWhiteContainers .blueArrow1 h3 {
@@ -648,7 +652,7 @@ nav .container-fluid {
 }
 .contactContainer .blueWhiteContainers .whiteArrow1 {
   background: url(/image/blackWhiteArrowBG1.png);
-  background-size: 75% 20%;
+  background-size: 70% 20%;
   background-repeat: no-repeat;
   padding: 5rem;
   height: 100vh;
@@ -738,7 +742,7 @@ nav .container-fluid {
   background-size: 75% 12%;
   background-repeat: no-repeat;
   padding: 5rem;
-  height: 65vh;
+  height: 60vh;
   flex-direction: column;
   justify-content: center;
 }
@@ -868,18 +872,54 @@ nav .container-fluid {
   text-align: justify;
 }
 /* **************************FINANCIALS PAGE********************** */
-.financialsContainer .financialsHeader{
+.financialsContainer .financialsHeader,
+.newsEventsContainer .newsEventsHeader {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+.financialsContainer .financialsHeader h1,
+.newsEventsContainer .newsEventsHeader h1 {
+  font-weight: 600;
+}
+.financialsMainContent,
+.newsEventsMainContent {
+  width: 90%;
+  margin: 5rem auto;
+}
+.financialsContainer .financialsMainContent ul,
+.newsEventsContainer .newsEventsMainContent ul {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.financialsContainer .financialsMainContent li:first-child,
+.newsEventsContainer .newsEventsMainContent li:first-child {
+  border-bottom: 2px solid black;
+}
+.financialsContainer .financialsMainContent li,
+.newsEventsContainer .newsEventsMainContent li {
+  margin-right: 3rem;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+/* **************************NEWS AND EVENTS PAGE********************** */
+/* .newsEventsContainer .newsEventsHeader {
   height: 70vh;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: flex-start;
-}
-/* ****************************Footer********************* */
-/* footer{
-  height:33rem;
-  position: relative;
 } */
+/* ****************************Footer********************* */
+
 footer .footerContainer {
   display: flex;
   justify-content: space-around;
@@ -954,6 +994,9 @@ footer .lowerFooter h4 {
   nav #navbarlist li a {
     padding-left: 4rem;
     font-size: 2.65rem;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow1 {
+    height: 130vh;
   }
 }
 
@@ -1054,6 +1097,14 @@ footer .lowerFooter h4 {
     display: flex;
     justify-content: center;
   }
+  .contactContainer .blueWhiteContainers .blueArrow1 {
+    height: 150vh;
+  }
+  .contactContainer .lastContactContent {
+    height: 80vh;
+  }
+  .contactContainer .blueWhiteContainers .whiteArrow1,.contactContainer .blueWhiteContainers .whiteArrow2 {
+    background-size: 60% 10%;}
 }
 
 @media (max-width: 788px) {
@@ -1114,6 +1165,26 @@ footer .lowerFooter h4 {
   .contactContainer .blueWhiteContainers .blueContent,
   .contactContainer .blueWhiteContainers .whiteContent {
     width: 70%;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow1 {
+    height: 140vh;
+  }
+
+  .contactContainer .blueWhiteContainers .whiteArrow1 {
+    height: 165vh;
+  }
+  .contactContainer .blueWhiteContainers .blueContainers.blueArrow2,
+  .contactContainer .blueWhiteContainers .blueContainers.blueArrow3 {
+    padding: 12rem 5rem 5rem;
+  }
+  .contactContainer .reimagineContainer .reimagineButton h3 {
+    width: 40%;
+  }
+  .contactContainer .lastContactSection .lastContactHeader {
+    flex-direction: column;
+  }
+  .contactContainer .lastContactSection .lastContactHeader .lastContactBox {
+    width: 100%;
   }
 }
 
@@ -1189,11 +1260,13 @@ footer .lowerFooter h4 {
   .contactContainer .leftRightBoxes .rightBox {
     flex-direction: column;
     margin: 5rem auto;
+    height: 100%;
   }
   .contactContainer .leftRightBoxes .BoxImage {
     order: 1;
     width: 90%;
     margin: 2rem auto;
+    height: 35vh;
   }
   .contactContainer .leftRightBoxes .BoxContent {
     order: 2;
@@ -1203,6 +1276,11 @@ footer .lowerFooter h4 {
   .newsContainer .latestNews li {
     margin-top: 1.2rem;
   }
+  .contactContainer .lastContactContent {
+    height: 120vh;
+  }
+  .contactContainer .blueWhiteContainers .whiteArrow1,.contactContainer .blueWhiteContainers .whiteArrow2 {
+    background-size: 60% 5%;}
 }
 @media (max-width: 500px) {
   html {
@@ -1246,9 +1324,30 @@ footer .lowerFooter h4 {
   .newsContainer .newsHeader {
     height: 45vh;
   }
+  .contactContainer .blueWhiteContainers .whiteArrow1 {
+    height: 112vh;top: -3rem;
+  }
+  .contactContainer .blueWhiteContainers .whiteArrow3 {
+    height: 40vh;
+  }
+  .contactContainer .leftRightBoxes .BoxImage {
+    justify-content: flex-start;
+  }
+  .contactContainer .leftRightBoxes .rightBox,
+  .contactContainer .leftRightBoxes .leftBox {
+    width: 95%;
+  }
+  .contactContainer .lastContactSection {
+    padding: 2rem;
+  }
+  .contactContainer .lastContactContent {
+    height: 80vh;
+  }
 }
 @media (max-width: 400px) {
-
+  html {
+    font-size: 36%;
+  }
   .car {
     left: 96px;
     bottom: 10rem;
@@ -1261,5 +1360,8 @@ footer .lowerFooter h4 {
   .aboutContainer .aboutInfoSection .aboutCard {
     width: 75%;
     margin: 2rem auto;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow1 {
+    height: 100vh;
   }
 }
