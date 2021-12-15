@@ -214,7 +214,8 @@ nav .container-fluid {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  margin: 1rem;
+  margin: 1.5rem;
+  object-fit: cover;
 }
 .blackLine {
   width: 100%;
@@ -477,6 +478,19 @@ nav .container-fluid {
   padding: 0;
   margin: 0;
 }
+.newsContainer .newsCorporate ul {
+  overflow: auto;
+  white-space: nowrap;
+  display: block;
+}
+.newsContainer .newsCorporate ul::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.newsContainer .newsCorporate ul {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 .newsContainer .newsCorporate li,
 .newsContainer .latestNews li {
   margin-right: 3rem;
@@ -489,6 +503,9 @@ nav .container-fluid {
 .newsContainer .newsCorporate li:first-child,
 .newsContainer .latestNews li:first-child {
   border-bottom: 2px solid black;
+}
+.newsCorporateListItems {
+  display: inline-block;
 }
 .newsContainer .newsFirstRow .dsContent {
   border-radius: 60px 0px 0px 60px;
@@ -512,7 +529,8 @@ nav .container-fluid {
   color: #fff;
 }
 .newsContainer .latestNews hr,
-.financialsContainer .financialsMainContent hr,.newsEventsContainer .newsEventsMainContent hr {
+.financialsContainer .financialsMainContent hr,
+.newsEventsContainer .newsEventsMainContent hr {
   margin: 0;
 }
 .newsContainer .latestNews .newsItem {
@@ -728,18 +746,23 @@ nav .container-fluid {
   background-position-y: bottom;
 }
 .contactContainer .blueWhiteContainers .blueArrow3 {
-  background: url(/image/blueWhiteArrowBG2.png);
-  /* background-size: 75% 20%; */
-  background-size: 97% 100%;
+  background: url(/image/blueWhiteArrowBG2.png),
+    url(/image/blueWhiteArrowBG3.png);
+  background-repeat: repeat;
+  /* background-size: auto; */
+  background-size: 75% 10%, 75% 10%;
   background-repeat: no-repeat;
+  background-position-y: top, bottom;
   padding: 5rem;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  /* top: -7rem; */
 }
 .contactContainer .blueWhiteContainers .whiteArrow3 {
   background: url(/image/blackWhiteArrowBG3.png);
-  background-size: 75% 12%;
+  background-size: 75% 10%;
   background-repeat: no-repeat;
   padding: 5rem;
   height: 60vh;
@@ -823,7 +846,7 @@ nav .container-fluid {
   font-weight: 400;
 }
 .contactContainer .reimagineContainer .newsItem .reimagineBox h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #3c3c3c;
   font-weight: 400;
 }
@@ -910,6 +933,53 @@ nav .container-fluid {
   color: #3c3c3c;
   cursor: pointer;
 }
+.financialsContainer .financialsMainContent .financialsReportsListHeader {
+  width: 70%;
+}
+.financialsContainer
+  .financialsMainContent
+  .financialsReportsListHeader
+  select {
+  word-wrap: normal;
+  color: #3c3c3c;
+  font-size: 3rem;
+  background: white;
+  margin: 2rem 1rem;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+.financialsContainer .financialsMainContent .financialsReportsListHeader h4 {
+  color: #3c3c3c;
+  font-size: 3rem;
+  margin: 1rem;
+
+  padding: 0.5rem 1rem;
+}
+.financialsContainer .financialsMainContent .financialsReportsList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.financialsContainer
+  .financialsMainContent
+  .financialsReportsList
+  .financialsReportsListQuarter {
+  width: 25%;
+}
+.financialsContainer
+  .financialsMainContent
+  .financialsReportsList
+  .financialsReportsListContent {
+  width: 70%;
+  display: flex;
+  justify-content:space-between;
+  color:#0064FF;
+}
+.financialsContainer .financialsMainContent .financialsReportsList h3 {
+  font-size: 2.3rem;
+  margin: 2rem 0;
+}
 /* **************************NEWS AND EVENTS PAGE********************** */
 /* .newsEventsContainer .newsEventsHeader {
   height: 70vh;
@@ -995,9 +1065,9 @@ footer .lowerFooter h4 {
     padding-left: 4rem;
     font-size: 2.65rem;
   }
-  .contactContainer .blueWhiteContainers .blueArrow1 {
+  /* .contactContainer .blueWhiteContainers .blueArrow1 {
     height: 130vh;
-  }
+  } */
 }
 
 @media (max-width: 983px) {
@@ -1027,10 +1097,10 @@ footer .lowerFooter h4 {
     box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   }
   nav #navbarlist {
-    width: 100%;
+    width: 65%;
     background: #0d6efd;
     margin-top: 8rem;
-    height: 94vh;
+    height: 95vh;
   }
   html {
     font-size: 55%;
@@ -1097,14 +1167,25 @@ footer .lowerFooter h4 {
     display: flex;
     justify-content: center;
   }
-  .contactContainer .blueWhiteContainers .blueArrow1 {
+  /* .contactContainer .blueWhiteContainers .blueArrow1 {
     height: 150vh;
-  }
+  } */
   .contactContainer .lastContactContent {
     height: 80vh;
   }
-  .contactContainer .blueWhiteContainers .whiteArrow1,.contactContainer .blueWhiteContainers .whiteArrow2 {
-    background-size: 60% 10%;}
+  .contactContainer .blueWhiteContainers .whiteArrow1,
+  .contactContainer .blueWhiteContainers .whiteArrow2 {
+    background-size: 60% 10%;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow3 {
+    background-size: 60% 10%, 60% 10%;
+  }
+  .contactContainer .blueWhiteContainers .whiteArrow1 {
+    top: -3rem;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow1 {
+    background-size: 60% 10%;
+  }
 }
 
 @media (max-width: 788px) {
@@ -1166,17 +1247,19 @@ footer .lowerFooter h4 {
   .contactContainer .blueWhiteContainers .whiteContent {
     width: 70%;
   }
+
   .contactContainer .blueWhiteContainers .blueArrow1 {
-    height: 140vh;
+    background-size: 60% 5%;
   }
 
-  .contactContainer .blueWhiteContainers .whiteArrow1 {
-    height: 165vh;
+  .contactContainer .blueWhiteContainers .whiteArrow2 {
+    height: 55vh;
+    padding: 2rem;
   }
-  .contactContainer .blueWhiteContainers .blueContainers.blueArrow2,
+  /* .contactContainer .blueWhiteContainers .blueContainers.blueArrow2,
   .contactContainer .blueWhiteContainers .blueContainers.blueArrow3 {
     padding: 12rem 5rem 5rem;
-  }
+  } */
   .contactContainer .reimagineContainer .reimagineButton h3 {
     width: 40%;
   }
@@ -1186,6 +1269,10 @@ footer .lowerFooter h4 {
   .contactContainer .lastContactSection .lastContactHeader .lastContactBox {
     width: 100%;
   }
+  .financialsContainer .financialsMainContent .financialsReportsList h3 {
+    font-size: 1.8rem;
+    margin: 2rem 1rem;
+}
 }
 
 @media (max-width: 620px) {
@@ -1279,8 +1366,21 @@ footer .lowerFooter h4 {
   .contactContainer .lastContactContent {
     height: 120vh;
   }
-  .contactContainer .blueWhiteContainers .whiteArrow1,.contactContainer .blueWhiteContainers .whiteArrow2 {
-    background-size: 60% 5%;}
+  .contactContainer .blueWhiteContainers .whiteArrow1 {
+    top: -1rem;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow3 {
+    background-size: 60% 3.5%, 60% 5%;
+    height: 75vh;
+    padding: 8rem 1rem;
+  }
+  .contactContainer .blueWhiteContainers .whiteArrow1,
+  .contactContainer .blueWhiteContainers .whiteArrow2 {
+    background-size: 60% 5%;
+  }
+  .contactContainer .blueWhiteContainers .whiteArrow3 {
+    background-size: 60% 8%;
+  }
 }
 @media (max-width: 500px) {
   html {
@@ -1301,7 +1401,7 @@ footer .lowerFooter h4 {
     margin-top: 4rem;
   } */
   .aboutUs .reviewrow {
-    width: 70%;
+    width: 80%;
   }
   footer .fbox {
     width: 80%;
@@ -1321,14 +1421,20 @@ footer .lowerFooter h4 {
     width: 85%;
     margin: 5rem auto;
   }
+  .contactContainer .contactHeader {
+    height: 20vh;
+  }
   .newsContainer .newsHeader {
     height: 45vh;
   }
   .contactContainer .blueWhiteContainers .whiteArrow1 {
-    height: 112vh;top: -3rem;
+    height: 70vh;
+    top: -1rem;
+    padding: 1rem;
   }
   .contactContainer .blueWhiteContainers .whiteArrow3 {
-    height: 40vh;
+    height: 30vh;
+    padding: 2rem;
   }
   .contactContainer .leftRightBoxes .BoxImage {
     justify-content: flex-start;
@@ -1341,7 +1447,30 @@ footer .lowerFooter h4 {
     padding: 2rem;
   }
   .contactContainer .lastContactContent {
-    height: 80vh;
+    height: 65vh;
+  }
+  .contactContainer .blueWhiteContainers .blueArrow1 {
+    height: 85vh;
+    padding: 2.7rem;
+  }
+  .contactContainer
+    .blueWhiteContainers
+    .blueContainers
+    .blueContentWrapper
+    .blueContent,
+  .contactContainer
+    .blueWhiteContainers
+    .whiteContainers
+    .whiteContentWrapper
+    .whiteContent {
+    padding: 1rem;
+  }
+  .contactContainer .blueWhiteContainers .blueContainers.blueArrow2,
+  .contactContainer .blueWhiteContainers .blueContainers.blueArrow3 {
+    padding: 2rem 1rem;
+  }
+  .contactContainer .lastContactSection {
+    background-size: 60% 6%;
   }
 }
 @media (max-width: 400px) {
