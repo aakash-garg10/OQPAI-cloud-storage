@@ -77,13 +77,14 @@
       <div class="financialsHeader bg-primary">
         <h1 class="text-white m-5">Financials</h1>
       </div>
-
+      <!-- ****************************************FINANCIALS MAIN CONTENT******************************************************** -->
       <div class="financialsMainContent">
         <ul>
-          <li id="listItemNews">Reports and Presentations</li>
-          <li id="listItemEventsPresentation">SEC fillings</li>
+          <li id="listItemReports">Reports and Presentations</li>
+          <li id="listItemSEC">SEC fillings</li>
         </ul>
         <hr style="margin-bottom: 5rem" />
+        <!-- **************************************FINANCIALS REPORT SECTION*************** -->
         <div class="financialsReports">
           <div
             class="financialsReportsListHeader d-flex justify-content-between"
@@ -163,6 +164,157 @@
             </div>
           </div>
         </div>
+        <!-- **************************************FINANCIALS SEC Filings SECTION*************** -->
+        <div class="financialsSEC">
+          <div class="financialsSECListHeader d-flex justify-content-between">
+            <select id="SECyear" name="year">
+              <option>year</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+            <select id="SECfilingtype" name="fillingtype">
+              <option>Filing type</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+            </select>
+            <h4 id="SECfilingDescription">Filling Description</h4>
+            <h4 id="SECdownload">Download/View</h4>
+          </div>
+          <hr style="height: 2px; color: black; opacity: 1" />
+          <div class="financialsSECList">
+            <div
+              class="
+                financialsSECListItem
+                d-flex
+                justify-content-around
+                align-items-center
+              "
+            >
+              <div class="financialsSECListQuarter">
+                <h3>06/12/2021</h3>
+              </div>
+              <div class="financialsSECfilingType">
+                <h3>4</h3>
+              </div>
+              <div class="financialsSECfilingDescription">
+                <h3>
+                  Statement of changes in benificial Ownership HAZELBAKER JILL
+                </h3>
+              </div>
+              <div class="financialsSECListContent">
+                <h3>PDF</h3>
+                <h3>DOC</h3>
+                <h3>XLS</h3>
+              </div>
+            </div>
+            <hr style="margin: 2rem 0" />
+            <div
+              class="
+                financialsSECListItem
+                d-flex
+                justify-content-around
+                align-items-center
+              "
+            >
+              <div class="financialsSECListQuarter">
+                <h3>06/12/2021</h3>
+              </div>
+              <div class="financialsSECfilingType">
+                <h3>4</h3>
+              </div>
+              <div class="financialsSECfilingDescription">
+                <h3>
+                  Statement of changes in benificial Ownership KRISHNAMURTHY
+                  NIKKI
+                </h3>
+              </div>
+              <div class="financialsSECListContent">
+                <h3>PDF</h3>
+                <h3>DOC</h3>
+                <h3>XLS</h3>
+              </div>
+            </div>
+            <hr style="margin: 2rem 0" />
+            <div
+              class="
+                financialsSECListItem
+                d-flex
+                justify-content-around
+                align-items-center
+              "
+            >
+              <div class="financialsSECListQuarter">
+                <h3>05/12/2021</h3>
+              </div>
+              <div class="financialsSECfilingType">
+                <h3>5</h3>
+              </div>
+              <div class="financialsSECfilingDescription">
+                <h3>
+                  Statement of changes in benificial Ownership CHAI NELSON
+                </h3>
+              </div>
+              <div class="financialsSECListContent">
+                <h3>PDF</h3>
+                <h3>DOC</h3>
+                <h3>XLS</h3>
+              </div>
+            </div>
+            <hr style="margin: 2rem 0" />
+            <div
+              class="
+                financialsSECListItem
+                d-flex
+                justify-content-around
+                align-items-center
+              "
+            >
+              <div class="financialsSECListQuarter">
+                <h3>04/12/2021</h3>
+              </div>
+              <div class="financialsSECfilingType">
+                <h3>3</h3>
+              </div>
+              <div class="financialsSECfilingDescription">
+                <h3>Statement of changes in benificial Ownership OQPAI</h3>
+              </div>
+              <div class="financialsSECListContent">
+                <h3>PDF</h3>
+                <h3>DOC</h3>
+                <h3>XLS</h3>
+              </div>
+            </div>
+            <hr style="margin: 2rem 0" />
+          </div>
+        </div>
       </div>
 
       <!-- *****************************LINK AND BUTTONS**************************** -->
@@ -234,6 +386,38 @@
         <h4>Online Support</h4>
       </div>
     </footer>
+    <script>
+      let listItemReports = document.querySelector("#listItemReports");
+      let listItemSEC = document.querySelector("#listItemSEC");
+      let divisionfinancialsReports =
+        document.querySelector(".financialsReports");
+      let divisonfinancialsSEC = document.querySelector(
+        ".financialsSEC"
+      );
+
+      [listItemReports, listItemSEC].forEach(function (element) {
+        element.addEventListener("click", () => {
+          if (newsEvents == 1) {
+            listItemSEC.style.color = "#777777";
+            listItemSEC.style.borderBottom = "0";
+           listItemReports.style.color = "black";
+           listItemReports.style.borderBottom = "2px solid black";
+           divisonfinancialsSEC.style.display = "none";
+            divisionfinancialsReports.style.display = "block";
+            newsEvents = 0;
+            console.log(listItemSEC);
+          } else {
+            listItemSEC.style.color = "black";
+            listItemSEC.style.borderBottom = "2px solid black";
+           listItemReports.style.color = "#777777";
+           listItemReports.style.borderBottom = "0";
+           divisonfinancialsSEC.style.display = "block";
+            divisionfinancialsReports.style.display = "none";
+            newsEvents = 1;
+          }
+        });
+      });
+    </script>
     <script src="app.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script

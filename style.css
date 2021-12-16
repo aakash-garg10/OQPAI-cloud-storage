@@ -936,10 +936,11 @@ nav .container-fluid {
 .financialsContainer .financialsMainContent .financialsReportsListHeader {
   width: 70%;
 }
-.financialsContainer
-  .financialsMainContent
-  .financialsReportsListHeader
-  select {
+.financialsContainer .financialsMainContent .financialsSECListHeader {
+  width: 95%;
+}
+.financialsContainer .financialsMainContent .financialsReportsListHeader select,
+.financialsContainer .financialsMainContent .financialsSECListHeader select {
   word-wrap: normal;
   color: #3c3c3c;
   font-size: 3rem;
@@ -949,14 +950,16 @@ nav .container-fluid {
   border-radius: 10px;
   padding: 0.75rem 1rem;
 }
-.financialsContainer .financialsMainContent .financialsReportsListHeader h4 {
+.financialsContainer .financialsMainContent .financialsReportsListHeader h4,
+.financialsContainer .financialsMainContent .financialsSECListHeader h4 {
   color: #3c3c3c;
   font-size: 3rem;
   margin: 1rem;
 
   padding: 0.5rem 1rem;
 }
-.financialsContainer .financialsMainContent .financialsReportsList {
+.financialsContainer .financialsMainContent .financialsReportsList,
+.financialsContainer .financialsMainContent .financialsSECList {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -969,16 +972,47 @@ nav .container-fluid {
 }
 .financialsContainer
   .financialsMainContent
+  .financialsSECList
+  .financialsSECListQuarter {
+  width: 15%;
+}
+.financialsContainer
+  .financialsMainContent
+  .financialsSECList
+  .financialsSECfilingType {
+  width: 15%;
+}
+.financialsContainer
+  .financialsMainContent
+  .financialsSECList
+  .financialsSECfilingDescription {
+  width: 35%;
+}
+.financialsContainer
+  .financialsMainContent
   .financialsReportsList
   .financialsReportsListContent {
   width: 70%;
   display: flex;
-  justify-content:space-between;
-  color:#0064FF;
+  justify-content: space-between;
+  color: #0064ff;
 }
-.financialsContainer .financialsMainContent .financialsReportsList h3 {
+.financialsContainer
+  .financialsMainContent
+  .financialsSECList
+  .financialsSECListContent {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  color: #0064ff;
+}
+.financialsContainer .financialsMainContent .financialsReportsList h3,
+.financialsContainer .financialsMainContent .financialsSECList h3 {
   font-size: 2.3rem;
   margin: 2rem 0;
+}
+.financialsSEC{
+  display: none;
 }
 /* **************************NEWS AND EVENTS PAGE********************** */
 /* .newsEventsContainer .newsEventsHeader {
@@ -1272,7 +1306,7 @@ footer .lowerFooter h4 {
   .financialsContainer .financialsMainContent .financialsReportsList h3 {
     font-size: 1.8rem;
     margin: 2rem 1rem;
-}
+  }
 }
 
 @media (max-width: 620px) {
@@ -1471,6 +1505,75 @@ footer .lowerFooter h4 {
   }
   .contactContainer .lastContactSection {
     background-size: 60% 6%;
+  }
+  .financialsContainer .financialsMainContent .financialsReportsListHeader {
+    width: 90%;
+  }
+  .financialsContainer .financialsMainContent .financialsSECListHeader {
+    display: block !important;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .financialsContainer .financialsMainContent .financialsSECListHeader #SECyear,
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECListHeader
+    #SECfilingtype,
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECListHeader
+    #SECfilingDescription,
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECListHeader
+    #SECdownload {
+    display: inline-block;
+  }
+  .financialsContainer .financialsMainContent .financialsSECList,
+  .financialsSECListItem {
+    display: block !important;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECList
+    .financialsSECListQuarter {
+    width: 30vw;
+    display: inline-block;
+  }
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECList
+    .financialsSECfilingType {
+    width: 25vw;
+    display: inline-block;
+  }
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECList
+    .financialsSECfilingDescription {
+    width: 60vw;
+    display: inline-block;
+    white-space: normal;
+  }
+
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECList
+    .financialsSECListContent {
+    width: 50vw;
+    display: inline-block;
+    justify-content: space-between;
+  }
+  .financialsContainer
+    .financialsMainContent
+    .financialsSECList
+    .financialsSECListContent
+    h3 {
+    display: inline-block;
+    margin: 1rem 2rem;
+    /* justify-content: space-between; */
   }
 }
 @media (max-width: 400px) {
