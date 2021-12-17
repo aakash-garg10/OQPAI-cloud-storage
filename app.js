@@ -26,7 +26,7 @@ let newsEvents = 0;
       divisonItemEventsPresentation.style.display = "none";
       divisionItemNews.style.display = "block";
       newsEvents = 0;
-      console.log(listItemEventsPresentation);
+      // console.log(listItemEventsPresentation);
     } else {
       listItemEventsPresentation.style.color = "black";
       listItemEventsPresentation.style.borderBottom = "2px solid black";

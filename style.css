@@ -533,30 +533,37 @@ nav .container-fluid {
 .newsEventsContainer .newsEventsMainContent hr {
   margin: 0;
 }
-.newsContainer .latestNews .newsItem {
+.newsContainer .latestNews .newsItem,
+.newsEventsContainer .newsEventsMainContent .newsItem {
   margin-top: 3rem;
 }
-.newsContainer .latestNews .newsItem .date {
+
+.newsContainer .latestNews .newsItem .date,
+.newsEventsContainer .newsEventsMainContent .newsItem .date {
   font-size: 2rem;
   color: #555555;
 }
-.newsContainer .latestNews .newsItem .newsContent {
+.newsContainer .latestNews .newsItem .newsContent,
+.newsEventsContainer .newsEventsMainContent .newsItem .newsContent {
   font-size: 3rem;
   margin-top: 2rem;
   font-weight: 500;
   color: #555555;
 }
-.newsContainer .readMoreBtn a {
+.newsContainer .readMoreBtn a,
+.newsEventsContainer .newsEventsMainContent .newsItem .readMoreBtn a,.governaceContainer .governaceMainContent .governaceMeetings a {
   font-size: 2.5rem;
   border-bottom: 2px solid #0d6efd;
   font-weight: 400;
   text-decoration: none;
   margin-top: 2rem;
 }
-.newsContainer .readMoreBtn {
+.newsContainer .readMoreBtn,
+.newsEventsContainer .newsEventsMainContent .newsItem .readMoreBtn {
   margin-top: 1rem;
 }
-.newsContainer .viewAllBtn button {
+.newsContainer .viewAllBtn button,
+.newsEventsContainer .newsEventsMainContent .viewAllBtn button {
   font-size: 2.5rem;
 }
 .newsContainer .newslinkBtns {
@@ -896,7 +903,8 @@ nav .container-fluid {
 }
 /* **************************FINANCIALS PAGE********************** */
 .financialsContainer .financialsHeader,
-.newsEventsContainer .newsEventsHeader {
+.newsEventsContainer .newsEventsHeader,
+.governaceContainer .governaceHeader {
   height: 70vh;
   display: flex;
   align-items: center;
@@ -905,11 +913,13 @@ nav .container-fluid {
   justify-content: flex-start;
 }
 .financialsContainer .financialsHeader h1,
-.newsEventsContainer .newsEventsHeader h1 {
+.newsEventsContainer .newsEventsHeader h1,
+.governaceContainer .governaceHeader h1 {
   font-weight: 600;
 }
 .financialsMainContent,
-.newsEventsMainContent {
+.newsEventsMainContent,
+.governaceMainContent {
   width: 90%;
   margin: 5rem auto;
 }
@@ -924,11 +934,13 @@ nav .container-fluid {
   margin: 0;
 }
 .financialsContainer .financialsMainContent li:first-child,
-.newsEventsContainer .newsEventsMainContent li:first-child {
+.newsEventsContainer .newsEventsMainContent li:first-child,
+.governaceContainer .governaceMainContent li:first-child {
   border-bottom: 2px solid black;
 }
 .financialsContainer .financialsMainContent li,
-.newsEventsContainer .newsEventsMainContent li {
+.newsEventsContainer .newsEventsMainContent li,
+.governaceContainer .governaceMainContent li {
   margin-right: 3rem;
   color: #3c3c3c;
   cursor: pointer;
@@ -1007,13 +1019,53 @@ nav .container-fluid {
   color: #0064ff;
 }
 .financialsContainer .financialsMainContent .financialsReportsList h3,
-.financialsContainer .financialsMainContent .financialsSECList h3 {
+.financialsContainer .financialsMainContent .financialsSECList h3,.governaceContainer .governaceMainContent .governaceMeetings h4 {
   font-size: 2.3rem;
   margin: 2rem 0;
 }
-.financialsSEC{
+.financialsSEC {
   display: none;
 }
+/* ********************************GOVERNACE PAGE******************************** */
+.governaceContainer .governaceMainContent ul {
+  /* display: flex;
+  align-items: center; */
+  font-size: 3rem;
+  font-weight: 500;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+  white-space: nowrap;
+  display: block;
+}
+
+.governaceListItem {
+  display: inline-block;
+}
+.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.governaceContainer .governaceMainContent .governaceDocuments .newsItem{
+  display: flex;
+  justify-content: space-between;align-items: center;
+}
+.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn a{
+  text-decoration: none;
+  border-bottom: none;
+}
+.governaceContainer .governaceMainContent .governaceDocuments .newsContent{
+  font-size: 2.5rem;
+  /* margin-top: 2rem; */
+  font-weight: 500;
+  color: #555555;
+}
+
 /* **************************NEWS AND EVENTS PAGE********************** */
 /* .newsEventsContainer .newsEventsHeader {
   height: 70vh;

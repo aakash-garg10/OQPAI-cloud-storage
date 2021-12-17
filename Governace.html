@@ -46,19 +46,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarlist">
-            <!-- <li class="d-inline d-lg-none">
-              <button
-              class="navbar-toggler close float-right"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            ><span class="cross">&times;</span>
-          </button>
-              <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
-          </li> -->
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/index.html"
                 >Home</a
@@ -84,102 +71,182 @@
         </div>
       </div>
     </nav>
-    <section class="newsEventsContainer">
-      <!-- *************************FINANCIALS HEADER***************************** -->
-      <div class="newsEventsHeader bg-primary">
-        <h1 class="text-white m-5">NEWS AND EVENTS</h1>
+    <!-- ************************************FINANCIALS SECTION STARTING********************************* -->
+    <section class="governaceContainer">
+      <div class="governaceHeader bg-primary">
+        <h1 class="text-white m-5">GOVERNACE</h1>
       </div>
-      <div class="newsEventsMainContent">
+      <div class="governaceMainContent">
         <ul>
-          <li id="NewsEventslistItemNews">News</li>
-          <li id="NewsEventslistItemEventsPresentation">
-            Events and Presentations
+          <li
+            class="governaceListItem"
+            name="leadership"
+            onclick="governaceClicked(this)"
+          >
+            Leadership
+          </li>
+          <li
+            class="governaceListItem"
+            name="boardofdirector"
+            onclick="governaceClicked(this)"
+          >
+            Board Of Director
+          </li>
+          <li
+            class="governaceListItem"
+            name="committeecomposition"
+            onclick="governaceClicked(this)"
+          >
+            Committee Composition
+          </li>
+          <li
+            class="governaceListItem"
+            name="annualmeetingofstackholder"
+            onclick="governaceClicked(this)"
+          >
+            Annual Meeting Of Stackholder
           </li>
         </ul>
-        <hr style="margin-bottom: 5rem" />
-        <div id="NewsEventsdivisionItemNews" style="display: block">
-          <div class="newsItem">
-            <div class="date">DEC 1 , 2021</div>
-            <div class="newsContent">
-              Oqpai CEO to Participate in Fireside Chat Hosted by UBS
-            </div>
-            <div class="readMoreBtn">
-              <a href="#">Read more &gt; </a>
-            </div>
+        <hr style="margin-bottom: 5rem; margin-top: 0" />
+        <div class="governaceMeetings">
+          <h3 style="margin: 8rem 0 3rem">
+            2021 Annual Meeting of stockholders
+          </h3>
+          <h4>May 10, 2021</h4>
+          <div class="readMoreBtn">
+            <a href="#">Webcast </a>
           </div>
-          <hr class="newsDivider" style="margin: 5rem 0" />
-          <div class="newsItem">
-            <div class="date">NOV 17 , 2021</div>
-            <div class="newsContent">
-              Oqpai Introduces Oqpai One: A New Membership Program Bringing
-              Togather the Best of Oqpai
-            </div>
-            <div class="readMoreBtn">
-              <a href="#">Read more &gt; </a>
-            </div>
+          <div class="readMoreBtn">
+            <a href="#">Proxy Statement </a>
+            <a href="#">&gt;</a>
           </div>
-          <hr class="newsDivider" style="margin: 5rem 0" />
-          <div class="newsItem">
-            <div class="date">NOV 10 , 2021</div>
-            <div class="newsContent">
-              Oqpai Freight Completes Acquisition of Transplace
-            </div>
-            <div class="readMoreBtn">
-              <a href="#">Read more &gt; </a>
-            </div>
+          <div class="readMoreBtn">
+            <a href="#">Annual Reports </a>
+            <a href="#">&gt;</a>
           </div>
+          <div class="readMoreBtn">
+            <a href="#">Proxy Supplement </a>
+            <a href="#">&gt;</a>
+          </div>
+          <div class="readMoreBtn">
+            <a href="#">Annual Meeting Q&A </a>
+            <a href="#">&gt;</a>
+          </div>
+          <h3 style="margin: 8rem 0 3rem">
+            2020 Annual Meeting of stockholders
+          </h3>
+          <h4>May 10, 2020</h4>
 
-          <hr class="newsDivider" style="margin: 5rem 0" />
-          <div class="viewAllBtn">
-            <button type="button" class="btn btn-primary btn-lg">
-              Load More <i class="fas fa-plus"></i>
-            </button>
+          <div class="readMoreBtn">
+            <a href="#">Proxy Statement </a>
+            <a href="#">&gt;</a>
+          </div>
+          <div class="readMoreBtn">
+            <a href="#">Annual Reports </a>
+            <a href="#">&gt;</a>
           </div>
         </div>
-        <div id="NewsEventsdivisonItemNewsEventsPresentation"
-          style="display: none"
-        >
+        <div class="governaceDocuments">
+          <h3 style="margin: 8rem 0 3rem">Governace Documents</h3>
           <div class="newsItem">
-            <div class="date">Dec 5, 2021 07:00 AM PT</div>
-            <div class="newsContent">Fireside Chat with UBS</div>
+            <div class="newsContent">Audit Committee Charter</div>
             <div class="readMoreBtn">
               <a href="#" style="border-bottom: none"
-                ><i class="far fa-calendar"></i> Add to Calendar &gt;
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
               </a>
             </div>
           </div>
-          <hr class="newsDivider" style="margin: 5rem 0" />
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
           <div class="newsItem">
-            <div class="date">Nov, 17, 2021 01:45 PM PT</div>
-            <div class="newsContent">
-              Oqpai Q3 2021 Earnings Conference Call
-            </div>
+            <div class="newsContent">Compensation Committee Charter</div>
             <div class="readMoreBtn">
               <a href="#" style="border-bottom: none"
-                ><i class="fas fa-print"></i> Web Cast &gt;  
-              </a>
-              <a href="#" style="border-bottom: none"
-                >   <i class="fas fa-code"></i> Press Release &gt;
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
               </a>
             </div>
           </div>
-          <hr class="newsDivider" style="margin: 5rem 0" />
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
           <div class="newsItem">
-            <div class="date">Nov 10, 2021 02:00 PM PT</div>
-            <div class="newsContent">Goldman Sachs Communacopia Conference</div>
+            <div class="newsContent">Bylaws</div>
             <div class="readMoreBtn">
               <a href="#" style="border-bottom: none"
-                ><i class="fas fa-print"></i> Web Cast &gt;
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
               </a>
             </div>
           </div>
-
-          <hr class="newsDivider" style="margin: 5rem 0" />
-          <div class="viewAllBtn">
-            <button type="button" class="btn btn-primary btn-lg">
-              View All <i class="fas fa-plus"></i>
-            </button>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">Certificate of Incorpration</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
           </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">Nominating and Corporate Governance Committee Charter</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">Corporate Governace Cycle</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">Stock Ownership Guidelines</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">ClawBack Policy</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">Business Conduct Guide</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">Cultural Norms</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
+          <div class="newsItem">
+            <div class="newsContent">U.S  Corporate Political Activity Policy</div>
+            <div class="readMoreBtn">
+              <a href="#" style="border-bottom: none"
+                ><i class="fas fa-cloud-download-alt fa-3x"></i>
+              </a>
+            </div>
+          </div>
+          <hr class="newsDivider" style="margin: 1.5rem 0" />
         </div>
       </div>
       <!-- *****************************LINK AND BUTTONS**************************** -->
@@ -248,50 +315,7 @@
         <h4>Online Support</h4>
       </div>
     </footer>
-    <script>
-      let NewsEventslistItemNews = document.querySelector(
-        "#NewsEventslistItemNews"
-      );
-      let NewsEventslistItemEventsPresentation = document.querySelector(
-        "#NewsEventslistItemEventsPresentation"
-      );
-      console.log(NewsEventslistItemEventsPresentation);
-      console.log(NewsEventslistItemNews);
-      let NewsEventsdivisionItemNews = document.querySelector(
-        "#NewsEventsdivisionItemNews"
-      );
-      let NewsEventsdivisonItemNewsEventsPresentation = document.querySelector(
-        "#NewsEventsdivisonItemNewsEventsPresentation"
-      );
-      console.log(NewsEventsdivisionItemNews);
-      console
-        .log(NewsEventsdivisonItemNewsEventsPresentation);
-        [
-          NewsEventslistItemNews, NewsEventslistItemEventsPresentation
-        ].forEach(function (element) {
-          element.addEventListener("click", () => {
-            if (newsEvents == 1) {
-              NewsEventslistItemEventsPresentation.style.color = "#777777";
-              NewsEventslistItemEventsPresentation.style.borderBottom = "0";
-              NewsEventslistItemNews.style.color = "black";
-              NewsEventslistItemNews.style.borderBottom = "2px solid black";
-              NewsEventsdivisonItemNewsEventsPresentation.style.display = "none";
-              NewsEventsdivisionItemNews.style.display = "block";
-              newsEvents = 0;
-              // console.log(NewsEventslistItemEventsPresentation);
-            } else {
-              NewsEventslistItemEventsPresentation.style.color = "black";
-              NewsEventslistItemEventsPresentation.style.borderBottom =
-                "2px solid black";
-              NewsEventslistItemNews.style.color = "#777777";
-              NewsEventslistItemNews.style.borderBottom = "0";
-              NewsEventsdivisonItemNewsEventsPresentation.style.display = "block";
-              NewsEventsdivisionItemNews.style.display = "none";
-              newsEvents = 1;
-            }
-          });
-        });
-    </script>
+
     <script src="app.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script
