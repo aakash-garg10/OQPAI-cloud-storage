@@ -1046,7 +1046,7 @@ nav .container-fluid {
   display: inline-block;
 }
 .governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn{
-  width: 20%;
+  width: 23%;
   display: flex;
   justify-content: space-between;
   margin: 3rem 0;
@@ -1064,6 +1064,39 @@ nav .container-fluid {
   /* margin-top: 2rem; */
   font-weight: 500;
   color: #555555;
+}
+.governaceContainer .boardOfDirector .governaceDocuments .newsItem .readMoreBtn{
+  font-size: 2.3rem;
+  margin: 2rem 0;
+  font-weight: 500;
+  color: #555555;
+  width:70%;
+  text-align: left;
+
+}
+.governaceContainer .boardOfDirector .governaceDocuments .newsItem .newsContent{
+  font-size: 2.5rem;
+  /* margin-top: 2rem; */
+  font-weight: 500;
+  color: #3C3C3C;
+  width: 25%;
+
+}
+/* ******************************LEADERSHIP PAGE********************** * */
+.leadershipCards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.leadershipCards .leadershipCard{
+  margin-top:3rem;
+}
+.leadershipCards .leadershipCard .lCardHeader .lCardName h2{
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+.leadershipCards .leadershipCard .lCardHeader .lCardPost h3{
+  font-size: 2rem;
 }
 
 /* **************************NEWS AND EVENTS PAGE********************** */
@@ -1627,6 +1660,27 @@ footer .lowerFooter h4 {
     margin: 1rem 2rem;
     /* justify-content: space-between; */
   }
+  .leadershipCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .leadershipCards .leadershipCard{
+    margin-top:5rem;
+  }
+  .leadershipCards .leadershipCard .lCardHeader .lCardName h2{
+    margin: 1rem 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .leadershipCards .leadershipCard .lCardHeader .lCardPost h3{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .annualMeetingHeading{
+    font-size: 3.8rem;
+  }.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn {
+    width: 50%;}
 }
 @media (max-width: 400px) {
   html {

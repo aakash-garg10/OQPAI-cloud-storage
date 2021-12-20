@@ -13,6 +13,9 @@ let newsCorporateListContent = document.querySelectorAll(
   ".newsCorporateListContent"
 );
 
+let governaceListItems = document.querySelectorAll(".governaceListItem");
+let governaceListContent = document.querySelectorAll(".governaceListContent");
+
 let newsEvents = 0;
 // console.log(listItemEventsPresentation);
 
@@ -47,6 +50,25 @@ function Clicked(elem) {
     element.classList.add("newsCorporateHideDiv");
   });
   newsCorporateListItems.forEach(function (element) {
+    element.style.borderBottom = "none";
+  });
+  elem.style.borderBottom = "2px solid black";
+  const idname = elem.getAttribute("name");
+  console.log(document.getElementById(idname));
+  // displayBox=document.getElementById(idname)
+  // displayBox.classList.add("newsCorporateShowDiv");
+  //   const contDiv=document.getElementById(idname).classList.add("newsCorporateShowDiv");
+  document.getElementById(idname).classList.remove("newsCorporateHideDiv");
+  document.getElementById(idname).classList.add("newsCorporateShowDiv");
+}
+// ****************************************GOVERNACE LIST NAVIGATION********************************
+console.log(governaceListItems);
+console.log(governaceListContent);
+function governaceClicked(elem) {
+  governaceListContent.forEach(function (element) {
+    element.classList.add("newsCorporateHideDiv");
+  });
+  governaceListItems.forEach(function (element) {
     element.style.borderBottom = "none";
   });
   elem.style.borderBottom = "2px solid black";
