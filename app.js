@@ -71,7 +71,7 @@ function governaceClicked(elem) {
   governaceListItems.forEach(function (element) {
     element.style.borderBottom = "none";
   });
-  elem.style.borderBottom = "2px solid black";
+  elem.style.borderBottom = "2px solid #0d6efd";
   const idname = elem.getAttribute("name");
   console.log(document.getElementById(idname));
   // displayBox=document.getElementById(idname)

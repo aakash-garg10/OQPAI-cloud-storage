@@ -551,7 +551,8 @@ nav .container-fluid {
   color: #555555;
 }
 .newsContainer .readMoreBtn a,
-.newsEventsContainer .newsEventsMainContent .newsItem .readMoreBtn a,.governaceContainer .governaceMainContent .governaceMeetings a {
+.newsEventsContainer .newsEventsMainContent .newsItem .readMoreBtn a,
+.governaceContainer .governaceMainContent .governaceMeetings a {
   font-size: 2.5rem;
   border-bottom: 2px solid #0d6efd;
   font-weight: 400;
@@ -1019,7 +1020,8 @@ nav .container-fluid {
   color: #0064ff;
 }
 .financialsContainer .financialsMainContent .financialsReportsList h3,
-.financialsContainer .financialsMainContent .financialsSECList h3,.governaceContainer .governaceMainContent .governaceMeetings h4 {
+.financialsContainer .financialsMainContent .financialsSECList h3,
+.governaceContainer .governaceMainContent .governaceMeetings h4 {
   font-size: 2.3rem;
   margin: 2rem 0;
 }
@@ -1045,60 +1047,90 @@ nav .container-fluid {
 .governaceListItem {
   display: inline-block;
 }
-.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn{
+.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn {
   width: 23%;
   display: flex;
   justify-content: space-between;
   margin: 3rem 0;
 }
-.governaceContainer .governaceMainContent .governaceDocuments .newsItem{
+.governaceContainer .governaceMainContent .governaceDocuments .newsItem {
   display: flex;
-  justify-content: space-between;align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn a{
+.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn a {
   text-decoration: none;
   border-bottom: none;
 }
-.governaceContainer .governaceMainContent .governaceDocuments .newsContent{
+.governaceContainer .governaceMainContent .governaceDocuments .newsContent {
   font-size: 2.5rem;
   /* margin-top: 2rem; */
   font-weight: 500;
   color: #555555;
 }
-.governaceContainer .boardOfDirector .governaceDocuments .newsItem .readMoreBtn{
+.governaceContainer
+  .boardOfDirector
+  .governaceDocuments
+  .newsItem
+  .readMoreBtn {
   font-size: 2.3rem;
   margin: 2rem 0;
   font-weight: 500;
   color: #555555;
-  width:70%;
+  width: 70%;
   text-align: left;
-
 }
-.governaceContainer .boardOfDirector .governaceDocuments .newsItem .newsContent{
+.governaceContainer
+  .boardOfDirector
+  .governaceDocuments
+  .newsItem
+  .newsContent {
   font-size: 2.5rem;
   /* margin-top: 2rem; */
   font-weight: 500;
-  color: #3C3C3C;
+  color: #3c3c3c;
   width: 25%;
-
 }
 /* ******************************LEADERSHIP PAGE********************** * */
-.leadershipCards{
+.leadershipCards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.leadershipCards .leadershipCard{
-  margin-top:3rem;
+.leadershipCards .leadershipCard {
+  margin-top: 3rem;
 }
-.leadershipCards .leadershipCard .lCardHeader .lCardName h2{
+.leadershipCards .leadershipCard .lCardHeader .lCardName h2 {
   margin: 1rem 0;
   font-size: 3rem;
 }
-.leadershipCards .leadershipCard .lCardHeader .lCardPost h3{
+.leadershipCards .leadershipCard .lCardHeader .lCardPost h3 {
   font-size: 2rem;
 }
-
+.compositionContainer .committeeHeader {
+  font-size: 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.compositionContainer .firstBlock {
+  width: 25%;
+}
+.compositionContainer .secondBlock {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+.compositionContainer .thirdBlock,
+.compositionContainer .fourthBlock {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.compositionContainer .thirdBlock h2{
+margin: 0 1rem;margin-right: 2rem;
+  font-size: 2.5rem;
+}
 /* **************************NEWS AND EVENTS PAGE********************** */
 /* .newsEventsContainer .newsEventsHeader {
   height: 70vh;
@@ -1660,27 +1692,36 @@ footer .lowerFooter h4 {
     margin: 1rem 2rem;
     /* justify-content: space-between; */
   }
-  .leadershipCards{
+  .leadershipCards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .leadershipCards .leadershipCard{
-    margin-top:5rem;
+  .leadershipCards .leadershipCard {
+    margin-top: 5rem;
   }
-  .leadershipCards .leadershipCard .lCardHeader .lCardName h2{
+  .leadershipCards .leadershipCard .lCardHeader .lCardName h2 {
     margin: 1rem 0;
     font-size: 4rem;
     text-align: center;
   }
-  .leadershipCards .leadershipCard .lCardHeader .lCardPost h3{
+  .leadershipCards .leadershipCard .lCardHeader .lCardPost h3 {
     font-size: 3rem;
     text-align: center;
   }
-  .annualMeetingHeading{
+  .annualMeetingHeading {
     font-size: 3.8rem;
-  }.governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn {
-    width: 50%;}
+  }
+  .governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn {
+    width: 50%;
+  }.compositionContainer .secondBlock {
+    width: 27%;}
+    .compositionContainer .committeeHeader{
+      font-size: 2.25rem;
+    }
+    #committeeLegend{
+width: 62%;
+    }
 }
 @media (max-width: 400px) {
   html {
@@ -1701,5 +1742,6 @@ footer .lowerFooter h4 {
   }
   .contactContainer .blueWhiteContainers .blueArrow1 {
     height: 100vh;
-  }
+  }.compositionContainer .secondBlock {
+    width: 20%;}
 }
