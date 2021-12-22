@@ -920,7 +920,8 @@ nav .container-fluid {
 }
 .financialsMainContent,
 .newsEventsMainContent,
-.governaceMainContent {
+.governaceMainContent,
+.faqsMainContent {
   width: 90%;
   margin: 5rem auto;
 }
@@ -1127,9 +1128,45 @@ nav .container-fluid {
   display: flex;
   justify-content: center;
 }
-.compositionContainer .thirdBlock h2{
-margin: 0 1rem;margin-right: 2rem;
+.compositionContainer .thirdBlock h2 {
+  margin: 0 1rem;
+  margin-right: 2rem;
   font-size: 2.5rem;
+}
+.faqsMainContent .governaceDocuments h3.annualMeetingHeading {
+  font-weight: 600;
+}
+.faqsMainContent .governaceDocuments .newsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faqsMainContent .governaceDocuments .newsContent {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+.faqsMainContent .governaceDocuments .readMoreBtn a {
+  color: #3c3c3c;
+}
+.faqsMainContent .additionalResources h3 {
+  margin: 8rem 0 5rem;
+}
+.faqsMainContent .additionalResources .aResourcesImages {
+  display: flex;
+  justify-content: space-between;
+}
+.faqsMainContent .additionalResources .arImageWrapper {
+  width: 40%;
+}
+.faqsMainContent .additionalResources .arImageWrapper h2 {
+  font-size: 3rem;
+  margin: 2.5rem 0;
+}
+.faqsMainContent .additionalResources .arImageWrapper h4,.faqsMainContent .additionalResources .arImageWrapper a  {
+  font-size: 2rem;
+  line-height: 1.7;
 }
 /* **************************NEWS AND EVENTS PAGE********************** */
 /* .newsEventsContainer .newsEventsHeader {
@@ -1714,14 +1751,16 @@ footer .lowerFooter h4 {
   }
   .governaceContainer .governaceMainContent .governaceMeetings .readMoreBtn {
     width: 50%;
-  }.compositionContainer .secondBlock {
-    width: 27%;}
-    .compositionContainer .committeeHeader{
-      font-size: 2.25rem;
-    }
-    #committeeLegend{
-width: 62%;
-    }
+  }
+  .compositionContainer .secondBlock {
+    width: 27%;
+  }
+  .compositionContainer .committeeHeader {
+    font-size: 2.25rem;
+  }
+  #committeeLegend {
+    width: 62%;
+  }
 }
 @media (max-width: 400px) {
   html {
@@ -1742,6 +1781,8 @@ width: 62%;
   }
   .contactContainer .blueWhiteContainers .blueArrow1 {
     height: 100vh;
-  }.compositionContainer .secondBlock {
-    width: 20%;}
+  }
+  .compositionContainer .secondBlock {
+    width: 20%;
+  }
 }
