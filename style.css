@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 html {
   font-size: 62.5%;
@@ -20,7 +19,6 @@ nav {
   height: 11rem;
   z-index: 1;
   border-bottom: 1px solid black;
-  /* width: 97%; */
   margin: 0 auto;
 }
 nav #navbarlist {
@@ -44,7 +42,6 @@ nav #navbarSupportedContent {
   flex-grow: 0;
 }
 nav.navbar button.navbar-toggler {
-  /* margin: 2rem 3rem; */
   margin: 2rem;
   border: 0.5px solid rgba(255, 255, 255, 0.55);
 }
@@ -58,7 +55,6 @@ nav.navbar-dark .navbar-toggler-icon {
 }
 #mainContent {
   background-color: white;
-  /* margin-bottom: -10px; */
   height: 100%;
 }
 #navbarlist button {
@@ -72,7 +68,6 @@ nav.navbar-dark .navbar-toggler-icon {
 h1 {
   font-size: 7.2rem;
   font-weight: 800;
-  /* margin-bottom: 3rem; */
   margin: 3rem auto;
 }
 h3 {
@@ -88,19 +83,15 @@ nav .container-fluid {
 .content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   padding: 20rem 5rem 5rem;
-  /* padding: 15rem 5rem 5rem; */
 }
 .carContainer {
   position: relative;
   height: 75vh;
-  /* overflow: hidden; */
 }
 
 .homeImage {
-  /* transform: scale(1.2); */
   padding-top: 10rem;
 }
 .car {
@@ -124,9 +115,7 @@ nav .container-fluid {
 }
 
 /* *****************GEt StARTED************************** */
-/* .getStarted {
-  margin-top: 2rem;
-} */
+
 .getStarted h2 {
   font-size: 6rem;
   font-weight: 600;
@@ -197,7 +186,6 @@ nav .container-fluid {
   padding: 1rem;
 }
 .aboutUs .reviewContainer .reviewDescription {
-  /* border-top: 2px solid #2C3539; */
   padding: 2rem;
 }
 .aboutUs .reviewContainer .reviewDescription h3 {
@@ -240,9 +228,7 @@ nav .container-fluid {
 }
 
 /* ***********************About US PAGES**************************** */
-/* .aboutContainer .container {
-  width: 90%;
-} */
+
 .aboutContainer .aboutImage img {
   width: 100%;
 }
@@ -334,7 +320,6 @@ nav .container-fluid {
 .aboutContainer .divideSections .dsContent {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   flex-direction: column;
 }
 .aboutContainer .divideSections .dsContent h3 {
@@ -351,7 +336,6 @@ nav .container-fluid {
 
 .aboutContainer .aboutCard {
   width: 25%;
-  /* margin: 10rem 0; */
   margin: 5rem 0;
 }
 .aboutContainer .aboutCard h3 {
@@ -582,7 +566,6 @@ nav .container-fluid {
   align-items: center;
   height: 15rem;
   margin: 5rem 2rem;
-  /* border: 2px solid red; */
 }
 .newsContainer .newslinkBtns .moneyIcon,
 .newsContainer .newslinkBtns .calendarIcon {
@@ -624,7 +607,6 @@ nav .container-fluid {
 
 .contactContainer .contactImage .contactImageContent {
   display: flex;
-  /* flex-direction: column; */
   justify-content: flex-start;
   align-items: flex-end;
   width: 90%;
@@ -757,7 +739,6 @@ nav .container-fluid {
   background: url(/image/blueWhiteArrowBG2.png),
     url(/image/blueWhiteArrowBG3.png);
   background-repeat: repeat;
-  /* background-size: auto; */
   background-size: 75% 10%, 75% 10%;
   background-repeat: no-repeat;
   background-position-y: top, bottom;
@@ -766,7 +747,6 @@ nav .container-fluid {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  /* top: -7rem; */
 }
 .contactContainer .blueWhiteContainers .whiteArrow3 {
   background: url(/image/blackWhiteArrowBG3.png);
@@ -817,13 +797,11 @@ nav .container-fluid {
 .contactContainer .reimagineContainer h2 {
   font-size: 4rem;
   color: #3c3c3c;
-  /* margin-top: 8rem; */
   font-weight: 600;
 }
 .contactContainer .leftRightBoxes .BoxContent h3 {
   font-size: 2.5rem;
   color: #555555;
-  /* margin-top: 8rem; */
   font-weight: 400;
 }
 .contactContainer .reimagineContainer {
@@ -1031,8 +1009,7 @@ nav .container-fluid {
 }
 /* ********************************GOVERNACE PAGE******************************** */
 .governaceContainer .governaceMainContent ul {
-  /* display: flex;
-  align-items: center; */
+  
   font-size: 3rem;
   font-weight: 500;
   list-style: none;
@@ -1065,7 +1042,6 @@ nav .container-fluid {
 }
 .governaceContainer .governaceMainContent .governaceDocuments .newsContent {
   font-size: 2.5rem;
-  /* margin-top: 2rem; */
   font-weight: 500;
   color: #555555;
 }
@@ -1087,7 +1063,6 @@ nav .container-fluid {
   .newsItem
   .newsContent {
   font-size: 2.5rem;
-  /* margin-top: 2rem; */
   font-weight: 500;
   color: #3c3c3c;
   width: 25%;
@@ -1158,30 +1133,51 @@ nav .container-fluid {
   justify-content: space-between;
 }
 .faqsMainContent .additionalResources .arImageWrapper {
-  width: 40%;
+  width: 45%;
 }
 .faqsMainContent .additionalResources .arImageWrapper h2 {
   font-size: 3rem;
   margin: 2.5rem 0;
 }
-.faqsMainContent .additionalResources .arImageWrapper h4,.faqsMainContent .additionalResources .arImageWrapper a  {
+.faqsMainContent .additionalResources .arImageWrapper h4,
+.faqsMainContent .additionalResources .arImageWrapper a {
   font-size: 2rem;
   line-height: 1.7;
 }
-/* **************************NEWS AND EVENTS PAGE********************** */
-/* .newsEventsContainer .newsEventsHeader {
-  height: 70vh;
+.faqsMainContent .questions {
   display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: flex-start;
-} */
+  justify-content: space-between;
+  margin: 8rem 0;
+}
+.faqsMainContent .questions .questionBox1,
+.faqsMainContent .questions .questionBox2 {
+  width: 45%;
+}
+.faqsMainContent .questions h4 {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #3c3c3c;
+}.faqsMainContent .questions h3{
+  font-size: 4rem;
+}
+.faqsMainContent .questions .readMoreBtn a{
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #fff;
+  background-color: #0d6efd;
+  padding: 1rem;
+}.faqsMainContent .readMoreBtn a{
+  text-decoration: none;
+}
+.faqsMainContent .questions .readMoreBtn{
+  margin: 2rem 0;
+}
+
 /* ****************************Footer********************* */
 
 footer .footerContainer {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   color: #fff;
   padding-top: 5rem;
 }
@@ -1213,13 +1209,11 @@ footer .fbox2 h3 {
 footer .fbox2 h4,
 footer .fbox3 h4 {
   font-size: 2rem;
-  /* margin-bottom: 3rem; */
 }
 footer .lowerFooter {
   background: #0553c9;
   color: #cbcbcb;
-  /* position: fixed;
-  bottom: 0; */
+ 
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1253,9 +1247,7 @@ footer .lowerFooter h4 {
     padding-left: 4rem;
     font-size: 2.65rem;
   }
-  /* .contactContainer .blueWhiteContainers .blueArrow1 {
-    height: 130vh;
-  } */
+ 
 }
 
 @media (max-width: 983px) {
@@ -1309,11 +1301,8 @@ footer .lowerFooter h4 {
   .homerow2 {
     padding-top: 15rem;
   }
-  /* .getStarted {
-    margin-top: 8rem;
-  } */
+ 
   .contactContainer {
-    /* width: 90%; */
     margin: 3rem auto;
   }
   .getinTouchWrapper {
@@ -1344,8 +1333,7 @@ footer .lowerFooter h4 {
   }
   .contactContainer .leftRightBoxes .rightBox,
   .contactContainer .leftRightBoxes .leftBox {
-    /* align-items: unset; */
-    /* justify-content: center; */
+   
     width: 80%;
     margin: 1rem auto;
   }
@@ -1355,9 +1343,7 @@ footer .lowerFooter h4 {
     display: flex;
     justify-content: center;
   }
-  /* .contactContainer .blueWhiteContainers .blueArrow1 {
-    height: 150vh;
-  } */
+ 
   .contactContainer .lastContactContent {
     height: 80vh;
   }
@@ -1383,9 +1369,7 @@ footer .lowerFooter h4 {
     height: 35rem;
     width: 40rem;
   }
-  /* .getStarted {
-    margin-top: 6rem;
-  } */
+  
   .reviewBox {
     width: 80%;
   }
@@ -1444,10 +1428,7 @@ footer .lowerFooter h4 {
     height: 55vh;
     padding: 2rem;
   }
-  /* .contactContainer .blueWhiteContainers .blueContainers.blueArrow2,
-  .contactContainer .blueWhiteContainers .blueContainers.blueArrow3 {
-    padding: 12rem 5rem 5rem;
-  } */
+ 
   .contactContainer .reimagineContainer .reimagineButton h3 {
     width: 40%;
   }
@@ -1585,9 +1566,7 @@ footer .lowerFooter h4 {
   .homerow2 {
     padding-top: 5rem;
   }
-  /* .getStarted {
-    margin-top: 4rem;
-  } */
+ 
   .aboutUs .reviewrow {
     width: 80%;
   }
