@@ -1,3 +1,4 @@
+// ************************NEWS PAGE ITEMS FOR SWITCHING*******************
 let listItemNews = document.querySelector("#listItemNews");
 let listItemEventsPresentation = document.querySelector(
   "#listItemEventsPresentation"
@@ -13,12 +14,14 @@ let newsCorporateListContent = document.querySelectorAll(
   ".newsCorporateListContent"
 );
 
+// **************GOVERNACE PAGE ITEMS FOR SWITCHING ***********************
 let governaceListItems = document.querySelectorAll(".governaceListItem");
 let governaceListContent = document.querySelectorAll(".governaceListContent");
 
 let newsEvents = 0;
 // console.log(listItemEventsPresentation);
 
+// **********************NEWS PAGE (NEWS AND EVENTS&PRESENTATION) NAVIGATION****************
 [listItemNews, listItemEventsPresentation].forEach(function (element) {
   element.addEventListener("click", () => {
     if (newsEvents == 1) {
@@ -43,7 +46,7 @@ let newsEvents = 0;
 });
 // console.log(newsCorporateListItems);
 
-// ***********************NAVIGATION INSIDE COMPLETE LIST*****************************
+// ***********************NAVIGATION INSIDE COMPLETE LIST for NEWS PAGE*****************************
 console.log(newsCorporateListContent);
 function Clicked(elem) {
   newsCorporateListContent.forEach(function (element) {
@@ -55,15 +58,13 @@ function Clicked(elem) {
   elem.style.borderBottom = "2px solid black";
   const idname = elem.getAttribute("name");
   console.log(document.getElementById(idname));
-  // displayBox=document.getElementById(idname)
-  // displayBox.classList.add("newsCorporateShowDiv");
-  //   const contDiv=document.getElementById(idname).classList.add("newsCorporateShowDiv");
+ 
   document.getElementById(idname).classList.remove("newsCorporateHideDiv");
   document.getElementById(idname).classList.add("newsCorporateShowDiv");
 }
-// ****************************************GOVERNACE LIST NAVIGATION********************************
-console.log(governaceListItems);
-console.log(governaceListContent);
+// ****************************************GOVERNACE PAGE LIST NAVIGATION********************************
+// console.log(governaceListItems);
+// console.log(governaceListContent);
 function governaceClicked(elem) {
   governaceListContent.forEach(function (element) {
     element.classList.add("newsCorporateHideDiv");
@@ -73,10 +74,7 @@ function governaceClicked(elem) {
   });
   elem.style.borderBottom = "2px solid #0d6efd";
   const idname = elem.getAttribute("name");
-  console.log(document.getElementById(idname));
-  // displayBox=document.getElementById(idname)
-  // displayBox.classList.add("newsCorporateShowDiv");
-  //   const contDiv=document.getElementById(idname).classList.add("newsCorporateShowDiv");
+ 
   document.getElementById(idname).classList.remove("newsCorporateHideDiv");
   document.getElementById(idname).classList.add("newsCorporateShowDiv");
 }

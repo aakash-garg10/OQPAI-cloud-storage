@@ -101,7 +101,7 @@ nav .container-fluid {
   animation: caranimation 1s linear infinite;
   height: 45rem;
 }
-
+/* ANIMATION FOR CAR */
 @keyframes caranimation {
   0% {
     transform: translateY(0%);
@@ -391,6 +391,7 @@ nav .container-fluid {
   width: 90%;
   margin: 5rem auto;
 }
+/* *****************ABOUT PAGE STYLING ENDED************************ */
 
 /* ****************************NEWS PAGE **************************** */
 .newsContainer .newsImage img {
@@ -592,7 +593,7 @@ nav .container-fluid {
   align-items: center;
 }
 
-/* *****************CONTACTUS PAGE******************** */
+/* *****************CONTACTUS PAGE STYLING STARTED******************** */
 .contactContainer .contactImage {
   width: 100%;
   background: url(/image/contactbackground.png);
@@ -759,8 +760,7 @@ nav .container-fluid {
 }
 /* *****************************LEFT RIGHT BOXES**************************** */
 .contactContainer .leftRightBoxes {
-  /* width: 90%;
-  margin: auto; */
+ 
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -880,6 +880,7 @@ nav .container-fluid {
   line-height: 1.5;
   text-align: justify;
 }
+/* **************************CONTACT PAGE STYLING ENDED********************** * */ 
 /* **************************FINANCIALS PAGE********************** */
 .financialsContainer .financialsHeader,
 .newsEventsContainer .newsEventsHeader,
@@ -1067,7 +1068,8 @@ nav .container-fluid {
   color: #3c3c3c;
   width: 25%;
 }
-/* ******************************LEADERSHIP PAGE********************** * */
+/* *******************GOVERNACE STYLING ENDED********************** * */ */
+/* ******************************LEADERSHIP ********************** * */
 .leadershipCards {
   display: flex;
   justify-content: space-between;
@@ -1172,8 +1174,9 @@ nav .container-fluid {
 .faqsMainContent .questions .readMoreBtn{
   margin: 2rem 0;
 }
+/* *********************LEADERSHIP,FAQ PAGE STYLING ENDED********************** * */
 
-/* ****************************Footer********************* */
+/* ****************************Footer STYLING STARTED********************* */
 
 footer .footerContainer {
   display: flex;
@@ -1223,7 +1226,8 @@ footer .lowerFooter {
 footer .lowerFooter h4 {
   display: inline-block;
 }
-/* *********************MEDIA QUERIES**************************** */
+/* ***********************FOOTER STYLING ENDED*********************** */
+/* *********************MEDIA QUERIES STARTED**************************** */
 @media (max-width: 1250px) {
   html {
     font-size: 60%;
@@ -1765,3 +1769,4 @@ footer .lowerFooter h4 {
     width: 20%;
   }
 }
+/* ***********************MEDIA QUERIES ENDED********************** */
